@@ -1,0 +1,33 @@
+$primarycolor:#ff424d;
+$secondarycolor:#fafbfc;
+$lightcolor:#ffff;
+$darkcolor:#141518;
+$fontroot:arial,helvetica,sans-serif;
+$backgroundcolor:(#fff,#ff424d,#141518);
+$spaceamounts: (1,2,3,4,5);
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin:#{$space}rem;}
+  .my-#{$space} {
+      margin:#{$space}rem 0;}
+  .mx-#{$space} { 
+    margin:0 #{$space}rem;}
+  .p-#{$space} {
+    padding:#{$space}rem;
+  }
+  .py-#{$space} {
+    padding:#{$space}rem 0;
+  }
+  .px-#{$space} {
+    padding:0 #{$space}rem;
+  }
+  }
+  @mixin flexcolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: fit-content;
+    
+  }
