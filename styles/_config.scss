@@ -22,12 +22,32 @@ $spaceamounts: (1,2,3,4,5);
     padding:0 #{$space}rem;
   }
   }
+  .bg-dark {
+    background: $darkcolor;
+    color: $lightcolor;
+  }
   @mixin flexcolumn {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 20px;
     align-items: flex-start;
     justify-content: flex-start;
     height: fit-content;
     
   }
+  @mixin flexrow($direction,$just,$align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $just;
+    align-items:$align;
+    
+  }
+  @mixin searchbar {
+      padding: 8px;
+      border-radius: 50px;
+      background: rgb(235, 227, 227);
+      border:none;
+      text-align:center;
+      height: fit-content;
+  }
+ 

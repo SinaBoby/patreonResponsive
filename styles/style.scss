@@ -4,6 +4,7 @@
   box-sizing:border-box;
   padding:0;
   margin:0;
+  font-family: $fontroot;
   ul {
     list-style: none;
   }
@@ -63,14 +64,9 @@ header {
     }
     .btn{flex-shrink: 0;}
     #search{
-      height: fit-content;
+      @include searchbar;
       grid-column: 8/10;
       width:18vw;
-      padding:5px;
-      border-radius: 50px;
-      background: rgb(235, 227, 227);
-      border:none;
-      text-align:center;
       z-index:99;
     }
   }
@@ -82,6 +78,7 @@ header {
    .primary-btn {
      background: $primarycolor;
      color:$lightcolor;
+     border: none;
    }
 
 /*dropdown settings*/
@@ -105,10 +102,67 @@ label:hover{
   flex-direction: column;
   gap:10px;
 }
+.showcase {
+  height:90vh;
+  .container {
+    @include flexrow(row,center,center);
+    height:100%;
+    margin: auto;
+  }
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .img {
+    flex:0 1 568px;
+  }
+  &-text {
+    @include flexcolumn;
+    @extend .img;
+  }
+  h1 {
+    font-size: 3.5rem;
+    color:$primarycolor;
+    line-height: 4rem;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .btn.primary-btn {
+    font-size: 1.5rem;
+  }
+}
+.about {
+background: $lightcolor;
+
+
+}
+
+.about{
+  padding:4rem 2rem;
+  height:35vh;
+  h1 { font-size: 2.5rem;
+    text-align: center;
+    margin:1rem 1rem 3rem 1rem;
+  }
+  #search-2 {
+width:80%;
+@include searchbar;
+  }
+  .btn{
+    width:15%;
+    margin-left: 20px;
+  }
+}
+
+
+
 @media (max-width:1024px) {
  
  header{
   .container {
+    padding-top:1rem ;
       grid-template-rows: 8vh 1fr;
     #search{
       grid-column: 1/13;
@@ -142,7 +196,11 @@ label:hover{
    gap:40px;
    align-items:flex-start ; 
    
-  }}
+  }
+#search {
+  margin-top:1rem;
+}
+}
   nav ul li {width:100vw;}
   .sub.sub.prod-sub
    {
@@ -160,7 +218,41 @@ label:hover{
   #check:checked ~ nav {
     display:block;
   }
+  .sub a {
+    border-bottom: 2px solid grey;
+    padding:10px 0;
+  }
+  .sub a:hover {
+    opacity: 0.6;
+  }
 }
+}
+@media (max-width:768px) {
+  .showcase{
+    height: fit-content;
+    .container {
+    @include flexrow(column,space-between,center); 
+  }
+  
+  .img {
+    flex: 0 0 50%;
+    padding:auto;
+ }
+ &-text {
+   padding-top:10vh ;
+   padding-left: 5vw;
+ }
+}
+.about{
+  #search-2,.btn {
+    width:100%;
+    margin: 10px auto;
+  }
+  .btn {
+    margin: 5px auto;
+  }
+}
+
 }
 
 
