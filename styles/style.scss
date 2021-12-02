@@ -189,17 +189,18 @@ label:hover{
   .gallery-text {
    @include flexrow(column,space-evenly,center);
    width:50%;
-   padding:30px;
+   padding:0 30px 30px 30px;
    gap:30px;
    
   }
   .gallery-text.second{order: 1;}
-  h2 {
+  h2 {height: 50%;
       line-height: 3rem;
   }
   p {
    line-height: 2rem;
    font-size: 1.5rem;
+   height: 50%;
   }
   .img-container {
     width: 50%;
@@ -319,6 +320,18 @@ label:hover{
   }
 }
 
+
+.gallery{
+.img-box{
+  @include flexrow(column,space-between,center);
+  margin-bottom:20px;
+}
+.gallery-text{width:100%;
+padding:0 0 20px 0;}
+.img-container {
+  width:100%;
+}
+.gallery-text.second{order: 0;}
 }
 
-
+}

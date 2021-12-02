@@ -472,7 +472,7 @@ label:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
-  padding: 30px;
+  padding: 0 30px 30px 30px;
   gap: 30px;
 }
 
@@ -483,12 +483,14 @@ label:hover {
 }
 
 .gallery h2 {
+  height: 50%;
   line-height: 3rem;
 }
 
 .gallery p {
   line-height: 2rem;
   font-size: 1.5rem;
+  height: 50%;
 }
 
 .gallery .img-container {
@@ -646,5 +648,33 @@ label:hover {
   }
   .about .btn {
     margin: 5px auto;
+  }
+  .gallery .img-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .gallery .gallery-text {
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
+  .gallery .img-container {
+    width: 100%;
+  }
+  .gallery .gallery-text.second {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
 }
