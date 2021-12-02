@@ -123,6 +123,12 @@
   color: #ffff;
 }
 
+.primary-title {
+  font-size: 3rem;
+  color: #ff424d;
+  line-height: 2rem;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -229,7 +235,7 @@ header .btn {
 }
 
 header #search {
-  padding: 8px;
+  padding: 15px 0;
   border-radius: 50px;
   background: #ebe3e3;
   border: none;
@@ -237,6 +243,7 @@ header #search {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  font-size: 1.25rem;
   -ms-grid-column: 8;
   -ms-grid-column-span: 2;
   grid-column: 8/10;
@@ -358,16 +365,20 @@ label:hover {
 }
 
 .showcase .btn.primary-btn {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .about {
   background: #ffff;
+  padding: 4rem 2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-.about {
-  padding: 4rem 2rem;
-  height: 35vh;
+.about .container {
+  max-width: 1152px;
+  margin: auto;
 }
 
 .about h1 {
@@ -378,7 +389,7 @@ label:hover {
 
 .about #search-2 {
   width: 80%;
-  padding: 8px;
+  padding: 15px 0;
   border-radius: 50px;
   background: #ebe3e3;
   border: none;
@@ -386,11 +397,117 @@ label:hover {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  font-size: 1.25rem;
 }
 
-.about .btn {
+.about .btn.primary-btn {
   width: 15%;
   margin-left: 20px;
+  font-size: 20px;
+}
+
+.mid-sec .container {
+  max-width: 1152px;
+  margin: auto;
+}
+
+.mid-sec h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.mid-sec p {
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.gallery .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  max-width: 1152px;
+  margin: auto;
+  gap: 30px;
+}
+
+.gallery .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  gap: 20px;
+}
+
+.gallery .gallery-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  padding: 30px;
+  gap: 30px;
+}
+
+.gallery .gallery-text.second {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.gallery h2 {
+  line-height: 3rem;
+}
+
+.gallery p {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+.gallery .img-container {
+  width: 50%;
+}
+
+.gallery img {
+  width: 100%;
+  min-height: 50%;
+  margin-bottom: 20px;
+}
+
+.gallery .img-title a:hover {
+  border-bottom: 2px #ff424d solid;
+}
+
+.gallery .img-title p {
+  display: inline-block;
+  padding-right: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -463,31 +580,31 @@ label:hover {
   header .container #search {
     margin-top: 1rem;
   }
-  header nav ul li {
+  nav ul li {
     width: 100vw;
   }
-  header .sub.sub.prod-sub {
+  .sub.sub.prod-sub {
     position: relative;
   }
-  header .sub.sub.create-sub {
+  .sub.sub.create-sub {
     position: relative;
   }
-  header .sub.sub.resource-sub {
+  .sub.sub.resource-sub {
     position: relative;
   }
-  header .nav-right, header .logo, header .menu-bar {
+  .nav-right, .logo, .menu-bar {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
-  header #check:checked ~ nav {
+  #check:checked ~ nav {
     display: block;
   }
-  header .sub a {
+  .sub a {
     border-bottom: 2px solid grey;
     padding: 10px 0;
   }
-  header .sub a:hover {
+  .sub a:hover {
     opacity: 0.6;
   }
 }
