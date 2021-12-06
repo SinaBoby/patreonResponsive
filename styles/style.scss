@@ -269,6 +269,33 @@ a:hover{
   text-decoration: underline;
 }
 }
+.mid-section2 {
+  margin:40px 0;
+  .container {
+    width:90%;
+    margin: auto;
+    @include flexrow(column,space-between,center)
+    
+  }
+  .text{
+    text-align: center;
+  }
+  h2{
+    font-size : 3rem;
+  }
+  p {
+    font-size:1.3rem;
+    line-height: 3rem;
+    margin:1rem auto 3rem auto;
+  }
+  img{
+    width: 100%;
+  }
+  .image{
+    width:90%;
+  }
+}
+
 
 
 

@@ -595,6 +595,50 @@ label:hover {
   text-decoration: underline;
 }
 
+.mid-section2 {
+  margin: 40px 0;
+}
+
+.mid-section2 .container {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mid-section2 .text {
+  text-align: center;
+}
+
+.mid-section2 h2 {
+  font-size: 3rem;
+}
+
+.mid-section2 p {
+  font-size: 1.3rem;
+  line-height: 3rem;
+  margin: 1rem auto 3rem auto;
+}
+
+.mid-section2 img {
+  width: 100%;
+}
+
+.mid-section2 .image {
+  width: 90%;
+}
+
 @media (max-width: 1024px) {
   header .container {
     padding-top: 1rem;
