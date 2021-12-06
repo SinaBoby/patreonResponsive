@@ -292,6 +292,10 @@ label:hover{
   .sub a:hover {
     opacity: 0.6;
   }
+  .about {
+    .btn.primary-btn{
+      width:fit-content;}
+  }
 }
 
 @media (max-width:768px) {
