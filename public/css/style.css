@@ -161,8 +161,9 @@ header .container {
   height: -moz-fit-content;
   height: fit-content;
   margin: auto;
-  display: -ms-grid;
+  padding-top: 10px;
   display: grid;
+  display: -ms-grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   -webkit-box-align: center;
@@ -174,6 +175,7 @@ header .container .logo {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
+  margin-top: auto;
 }
 
 header .container nav {
@@ -641,9 +643,11 @@ label:hover {
 
 @media (max-width: 1024px) {
   header .container {
-    padding-top: 1rem;
     -ms-grid-rows: 8vh 1fr;
         grid-template-rows: 8vh 1fr;
+  }
+  header .container .logo {
+    margin-top: auto;
   }
   header .container #search {
     -ms-grid-column: 1;
@@ -656,6 +660,7 @@ label:hover {
     width: 100%;
   }
   header .container .nav-right {
+    margin-top: auto;
     -ms-grid-column: 8;
     -ms-grid-column-span: 4;
     grid-column: 8/12;
@@ -672,6 +677,7 @@ label:hover {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     padding: 10px;
+    margin-top: auto;
   }
   header .container nav {
     display: none;

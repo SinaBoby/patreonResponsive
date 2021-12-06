@@ -22,12 +22,15 @@ header {
   .container {
     width:97%;
     height: fit-content;
-    margin: auto;
+    margin:auto;
+    padding-top: 10px;
     display:grid;
+    display: -ms-grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
     .logo {
       grid-column: 1/2;
+      margin-top: auto;
     }
     nav {
       height: fit-content;
@@ -303,7 +306,7 @@ a:hover{
  
  header{
   .container {
-    padding-top:1rem ;
+     .logo{margin-top:auto;}
       grid-template-rows: 8vh 1fr;
     #search{
       grid-column: 1/13;
@@ -312,6 +315,7 @@ a:hover{
       width:100%; 
     }
     .nav-right {
+      margin-top: auto;
       grid-column: 8/12;
       grid-row: 1/2;
     }
@@ -319,7 +323,8 @@ a:hover{
       display: inline-block;
       grid-column: 12/13;
       grid-row: 1/2;
-      padding:10px
+      padding:10px;
+      margin-top: auto;
     }
   
   nav {
