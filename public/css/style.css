@@ -512,6 +512,89 @@ label:hover {
   padding-right: 10px;
 }
 
+.mid-section1 {
+  margin-top: 2rem;
+}
+
+.mid-section1 .container {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mid-section1 .text {
+  text-align: center;
+}
+
+.mid-section1 h2 {
+  font-size: 2.5rem;
+}
+
+.mid-section1 p {
+  font-size: 1.3rem;
+  width: 80%;
+  line-height: 3rem;
+  margin: auto;
+}
+
+.mid-section1 .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.mid-section1 .image {
+  width: 100%;
+}
+
+.mid-section1 img {
+  width: 100%;
+}
+
+.mid-section1 ul {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+
+.mid-section1 li {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.mid-section1 a {
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.mid-section1 a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 @media (max-width: 1024px) {
   header .container {
     padding-top: 1rem;
@@ -681,5 +764,23 @@ label:hover {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+  }
+  .mid-section1 .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mid-section1 li {
+    display: inline-block;
   }
 }
