@@ -241,7 +241,7 @@ p {
   font-size:1.3rem;
   width:80%;
   line-height: 3rem;
-  margin:auto;
+  margin:0 auto 2rem auto;
 }
 .links {
   @include flexrow(row,space-between,center);
@@ -254,6 +254,7 @@ img{
 width:100%;
 }
 ul{
+  
   flex: 0;
 }
 li{padding:10px;
@@ -388,9 +389,16 @@ padding:0 0 20px 0;}
   
    .links {
     @include flexrow(column,space-between,center);}
+    ul{text-align: 0;}
+    ul{text-align: center;
+    }
   li {
     display:inline-block;
+    font-size: 1.2rem;
+    margin:5px 0;
   }
+  .image{order:1;
+  margin-bottom: 5rem;}
 }
 
 }

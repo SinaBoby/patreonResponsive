@@ -546,7 +546,7 @@ label:hover {
   font-size: 1.3rem;
   width: 80%;
   line-height: 3rem;
-  margin: auto;
+  margin: 0 auto 2rem auto;
 }
 
 .mid-section1 .links {
@@ -780,7 +780,21 @@ label:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  .mid-section1 ul {
+    text-align: 0;
+  }
+  .mid-section1 ul {
+    text-align: center;
+  }
   .mid-section1 li {
     display: inline-block;
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  .mid-section1 .image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 5rem;
   }
 }
